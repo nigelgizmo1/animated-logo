@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+ <head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width. initial-scale=1.0">
+
+	<title>CAE Logo demo #1</title>
+<!--  This is a demonstration of SVG graphics, done on spec for CAE Technology  -->
+
+	<style>
+	.outterbox {
+		width: 100%;
+		font-size: 16px;
+		padding-left: 0;
+		padding-right; 0;
+	}
+	#container {
+		float: left;
+		width: 98%;
+		margin-left: 0;
+		margin-right: 2%;
+		margin-top: 20px;
+		padding: 1%;
+		background-color: lightgrey;
+	}
+
+	#hed1 {
+	visibility: visible;
+	}
+	#hed1.hid {
+	visibility: hidden;
+	}
+	</style>
+
+ </head>
+
+	 <body>
+
+		<div class="outterbox">
+
+			<div id="container">
+
+			<svg id="svg8" version="1.1" viewBox="0 0 235 115" width="100%">
+
+				<defs>
+					<!--  we define filters like feGauassianBlur etc.. here	 -->
+					<!--  direct definitions like this	-->
+
+					<!-- or fillters like this -->
+					<filter>
+
+					<!-- define filters here like blur and offset blend etc...	-->
+
+					</filter>
+
+				<style>
+					<!-- we can add normal css plus special css for svg see refs  with all the normal animation functions including key frame css etc-->
+					<!-- NOTE: 1. Any styling in the svg code it's self takes precedents over the CSS up here or anywhere else-->
+					<!-- NOTE: 2. Leading on from above in this drawing Inkscape had included in the svg code the attribute 'stroke-dasharray: none;'this disabled the animation as it relies on dasharray as the thing being animated. Beware! -->
+					#svg8 {
+						position: relative;
+						background-color: purple;
+					}
+
+					#path_C	{
+						visibility: hidden;
+						stroke-dasharray: 800;
+						stroke-dashoffset: 0;
+						-webkit-animation: wow_C 5000ms 2000ms 1;
+						-o-animation: wow_C 5000ms linear 2000ms 1;
+						-moz-animation: wow_C 5000ms linear 2000ms 1;
+						animation: wow_C 5000ms linear 2000ms 1;
+					}
+					#path_C.fin {
+					visibility: visible;
+					}
+
+					#path_A {
+						visibility: hidden;
+						stroke-dasharray: 800;
+						stroke-dashoffset: 0;
+						-webkit-animation: wow_C 5000ms linear 3200ms 1;
+						-o-animation: wow_C 5000ms linear 3200ms 1;
+						-moz-animation: wow_C 5000ms linear 3200ms 1;
+						animation: wow_C 5000ms linear 3200ms 1;
+
+					}
+					#path_A.fin {
+					visibility: visible;
+					}
+
+					#path_E {
+						visibility: hidden;
+						stroke-dasharray: 800;
+						stroke-dashoffset: 0;
+						-webkit-animation: wow_C 5000ms linear 4200ms 1;
+						-o-animation: wow_C 5000ms linear 4200ms 1;
+						-moz-animation: wow_C 5000ms linear 4200ms 1;
+						animation: wow_C 5000ms linear 4200ms 1;
+
+					}
+					#path_E.fin {
+					visibility: visible;
+					}
+
+					#cir_Dot {
+						visibility: hidden;
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 0;
+						-webkit-animation: wow_C 5000ms linear 7200ms 1;
+						-o-animation: wow_C 5000ms linear 7200ms 1;
+						-moz-animation: wow_C 5000ms linear 7200ms 1;
+						animation: wow_C 5000ms linear 7200ms 1;
+
+					}
+					#cir_Dot.fin {
+					visibility: visible;
+					}
+
+					@-webkit-keyframes wow_C	{
+						from {
+							visibility: visible;
+							stroke-dashoffset: 800;
+						}
+
+						to {
+							stroke-dashoffset: 0;
+						}
+
+					@keyframes wow_C	{
+						from {
+							visibility: visible;
+							stroke-dashoffset: 800;
+						}
+
+						to {
+							stroke-dashoffset: 0;
+						}
+					}
+					</style>
+
+				</defs>
+
+							<!--DRAWING GOES HERE-->
+					<g transform="translate(1.1782001e-6,-107.3325)" id="layer1">
+
+						<path class="letter-C" id="path_C"
+						   d="M 74.222267,170.04156 A 31.75,31.749998 0 0 1 38.457598,184.77298 31.75,31.749998 0 0 1 15.000181,154.01789 31.75,31.749998 0 0 1 38.664576,123.42177 31.75,31.749998 0 0 1 74.329035,138.39416"
+						   id="path4533"						   style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+
+
+						<path class="letter-A" id="path_A"
+						   d="m 90.027697,185.875 26.458333,-63.5 26.45833,63.5"						   style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+
+						<path class="letter-E" id="path_E"
+						   d="M 216.95834,169.99999 A 31.75,31.75 0 0 1 177.31822,183.40926 31.75,31.75 0 0 1 158.8154,145.87537 31.75,31.75 0 0 1 193.59189,122.6 a 31.75,31.75 0 0 1 27.64412,31.41576 h -52.91667"						   style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"/>
+
+
+						<circle class="letter-Dot" id="cir_Dot"
+						   r="1.7301741"
+						   cy="185.87465"
+						   cx="116.41665"						   style="fill:#ffffff;stroke:#ffffff;stroke-width:5.04;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;fill-opacity:1">
+						</circle>
+
+						<text
+						   transform="scale(1.0293071,0.97152732)"
+						   id="text4513"
+						   y="219.7029"
+						   x="10.21722"
+						   style="font-style:normal;font-weight:normal;font-size:17.42959976px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;fill:#ffffff;stroke:#ffffff;stroke-width:0.27200001;stroke-miterlimit:4;stroke-dasharray:none;"
+						   xml:space="preserve">
+
+							   <tspan class="allFin"
+								 id="tspan4511"							style="font-size:17.42959976px;stroke-width:0.27200001;stroke:#ffffff;stroke-miterlimit:4;stroke-dasharray:none;fill:#ffffff;"
+								 y="245.7029"
+								 x="10.21722"
+								>TECHNOLOGY ON POINT</tspan>
+									<animateMotion path="M 0 0 L 0 -25" begin="5500ms" dur="1500ms" fill="freeze" />
+
+						</text>
+
+					</g>
+
+			</svg>
+
+			</div>
+		</div>
+
+	 </body>
+<script type="text/javascript">
+
+	var path_C = document.getElementById("path_C");
+	var path_A = document.getElementById("path_A");
+	var path_E = document.getElementById("path_E");
+	var cir_Dot = document.getElementById("cir_Dot");
+
+	path_C.addEventListener("animationend", finished);
+	path_A.addEventListener("animationend", finished);
+	path_E.addEventListener("animationend", finished);
+	cir_Dot.addEventListener("animationend", finished);
+
+			function finished() {
+				path_C.classList.add ("fin");
+				path_A.classList.add("fin");
+				path_E.classList.add ("fin");
+				cir_Dot.classList.add("fin");
+			}
+
+</script>
+</html>
+
+ <!-- If I have gone further then it's because I am chasing giants  -->
